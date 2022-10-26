@@ -1,0 +1,27 @@
+body {
+  color: black;
+  text-align: center;
+  background-color: white;
+/* border-style : hidden;*/
+}
+input[type=submit] {
+  background-color: #e7e7e7;
+  color: black; /* Gray */
+  border-radius: 12px;
+  border-style : hidden;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+#section{
+  background-color: pink;
+  
+text-align: center;
+padding-top: 50px;
+padding-right: 50px;
+padding-bottom: 50px;
+padding-left: 50px;
+margin-top: 100px;
+margin-left: 470px;
+margin-right: 470px;
+border-style: hidden;
+}

@@ -1,0 +1,20 @@
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: white;
+  font-size = 300%;
+  text-align : center;
+  text-shadow: 2px 2px 5px red;
+  text-decoration-line: underline;
+}
+body {
+  color: black;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 150%
+}
+input[type=submit] {
+	background-color: #555555;
+	color: white;
+	font-size: 20px;
+	} 

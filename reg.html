@@ -1,0 +1,65 @@
+<html>
+<title>
+Registration
+</title>
+	<head>
+		<link rel="stylesheet" href="reg.css">
+		<script>
+		function validateForm() {
+			var x = document.forms["myForm"]["name"].value;
+			if (x == "") {
+			alert("Username must be filled out");
+			return false;
+			}
+			var z = document.forms["myForm"]["email"].value;
+			if (z == "") {
+			alert("Email must be filled out");
+			return false;
+			}
+			var y = document.forms["myForm"]["pass"].value;
+			if (y == "") {
+			alert("Password must be filled out");
+			return false;
+			}
+			var q = document.forms["myForm"]["confpass"].value;
+			if (q == "") {
+			alert("Please confirm the password");
+			return false;
+			}
+			
+			if(y != q){
+			alert("Passwords didn't match ");
+			return false;
+			}
+			
+		}
+/*		function validateEmail(emailId){
+		
+			var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+			if(z.value.match(mailformat))
+			{
+				document.forms["myForm"]["email"].focus();
+			return true;
+			}
+			else
+			{
+				alert("Invalid email address.");
+				//document.forms["myForm"]["email"].focus();
+			    return false;
+			}
+			}*/
+		</script>
+	</head>
+	<body>
+	<div>
+	<h1>Welcome to our Registration Page</h1>
+	<form name="myForm" action="registration.php" onsubmit="return validateForm()"  method="post">
+	Username : <input type="text" id="name" name="name"> <br>
+	Email: <input type="email" id="email" name="email" pattern="/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/" required> <br>
+	Password: <input type="password" id="pass" name="pass"><br>
+	Confirm Password : <input type="password" id="confpass" name="confpass"><br>
+	<input type="submit" value="Submit"  >
+	</form>
+	</div>
+	</body>
+</html>
